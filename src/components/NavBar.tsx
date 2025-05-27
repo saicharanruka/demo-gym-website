@@ -10,23 +10,23 @@ import { NavLinks, mobileNavLinks } from "@/constants/data";
 function NavBar() {
 	const [isOpen, setIsOpen] = useState(false);
 	return (
-		<div className="lg:sticky ">
-			<div className="flex justify-between border rounded-full p-3 items-center">
-				<div className="flex items-center">
-					<div className="flex items-center justify-start">
+		<div className="lg:sticky max-w-5xl mx-auto z-10">
+			<div className="flex justify-between border rounded-full p-2 items-center bg-white ">
+				<div className="flex items-center gap-1">
+					<div className="flex items-center justify-start ">
 						<Logo className="size-10" />
 					</div>
 
 					<Link href="/">
-						<h4 className="font-normal text-lg">logo</h4>
+						<h4 className="text-base font-semibold">Re:Fit</h4>
 					</Link>
 				</div>
-				<div className="hidden md:flex justify-center items-center gap-8 ">
+				<div className="hidden md:flex justify-center items-center gap-4 ">
 					{NavLinks.map((link) => (
 						<a
 							href={link.href}
 							key={link.title}
-							className="text-sm font-normal hover:font-medium hover:scale-105 hover:underline transition duration-300"
+							className="text-sm font-medium hover:font-medium hover:scale-105 hover:underline transition duration-300"
 						>
 							{link.title}
 						</a>
@@ -34,9 +34,9 @@ function NavBar() {
 				</div>
 				<Link
 					href="/contact"
-					className="hidden md:flex rounded-full bg-primary text-white p-2 shadow-md px-5 font-semibold text-sm"
+					className="hidden md:flex rounded-full bg-primary text-white p-2 shadow-md px-3 font-medium text-sm"
 				>
-					Contact
+					Get Started
 				</Link>
 				<div className="justify-end flex gap-4 md:hidden">
 					<svg

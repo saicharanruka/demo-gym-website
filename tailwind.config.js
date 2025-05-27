@@ -10,6 +10,9 @@ export const theme = {
 		colors: {
 			primary: "#3058A6",
 		},
+		fontFamily: {
+			primary: "var(--font-primary)",
+		},
 	},
 };
 export const plugins = [];
