@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Hero = () => {
 	return (
-		<section className="pb-16 md:pb-0 md:-mt-16 bg-gray-500/5 rounded-2xl relative ">
+		<section className="mt-5 pb-16 md:pb-0 md:-mt-16 bg-gray-500/5 rounded-2xl relative ">
 			<div className="absolute inset-0 -z-10  bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:40px_40px]"></div>
 			<div className="pt-24 md:pt-12 flex items-center justify-between gap-16 px-8">
 				<div className="flex flex-col gap-4">

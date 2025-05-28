@@ -3,6 +3,7 @@ import { DM_Sans } from "next/font/google";
 // import { Geist, Geist_Mono } from "next/font/google"; import fonts here
 import "./globals.css";
 import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
 	title: "DEMO - Re:Fit Gym",
@@ -21,12 +22,13 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" className={`${dmSans.variable} font-primary`}>
-			<body className={`max-w-7xl mx-4 mt-5 lg:mx-auto antialiased`}>
-				<main>
+			<body>
+				<main className="max-w-7xl mx-4 mt-5 lg:mx-auto antialiased`">
 					<NavBar />
 
 					{children}
 				</main>
+				<Footer />
 			</body>
 		</html>
 	);
